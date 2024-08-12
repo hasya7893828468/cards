@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: "poppins",sans-serif;
+    transition:0.3s ease-in-out;
+
+}
+body{
+    background-color: #120D24;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:50px
+
+}
+.card{
+    width: 490px;
+    height: 440px;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+
+}
+
+.card.blue{
+    background:linear-gradient(135deg,#09AFFF,#125575)
+}
+.card.blue img{
+    height: 600px;
+    width: 400px;
+    z-index: 2;
+
+    filter:drop-shadow( 5px 3px 54px black) ;
+
+}
+.card.yellow{
+    background:linear-gradient(135deg,#ffff66,#666600)
+    
+}
+.card.yellow  img{
+    position:relative ;
+   left: 100px;
+   bottom: 300px;
+    height: 700px;
+    width: 550px;
+    /* rotate: 50deg; */
+    filter:drop-shadow( 5px 3px 54px black) ;
+
+
+}
+
+
+
+.card.red{
+    background:linear-gradient(135deg,#ff3300,#661400)
+}
+.card.red
+img{
+    position:absolute ;
+   left: 100px;
+   bottom: 20px;
+    height: 500px;
+    
+    rotate: -50deg;
+
+    width: 350px;
+    filter:drop-shadow( 5px 3px 54px black) ;
+
+
+}
+.card.purple{
+    background: linear-gradient(135deg,#5911F2,#290987);
+}
+.card.purple img{
+    height: 700px;
+    width: 400px;
+    filter:drop-shadow( 5px 3px 54px black) ;
+
+}
+.card.gray{
+    background: linear-gradient(135deg,#999999,#333333);
+}
+.card.gray img{
+    height: 800px;
+    width: 500px;
+    position: relative;
+    bottom:300px;
+right: 120px;
+    rotate: 20deg ;
+    filter:drop-shadow( 5px 3px 54px black) ;
+    /* top: 50px; */
+}
+.card.pink{
+    background: linear-gradient(135deg,#ff6680,#ffccd5);
+}
+.card.pink img{
+    position: absolute;
+    left: 130px;
+    height: 500px;
+    width: 400px;
+    bottom: 20px;
+    filter:drop-shadow( 5px 3px 54px black) ;
+
+}
+.card.green{
+    background: linear-gradient(135deg,#b3ff99,#1a6600);
+}
+.card.green img{
+   height: 400px;
+   width: 400px;
+   rotate: 40deg;
+     position: absolute;
+     top: 30px;
+     left: 180px;
+     filter:drop-shadow( 5px 3px 54px black) ;
+
+}
+.card .product{
+    height: 85%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    position: relative;
+    transform-style: preserve-3d;
+}
+ .product .number{
+    font-size: 80px;
+    line-height: 80px;
+    font-style: italic ;
+    opacity: 0.25;
+ }
+
+ .product .sneakers{
+    font-size: 35px;
+    line-height: 35px;
+    font-style: italic;
+    opacity: 0.7;
+ }
+ .product img{
+    /* filter: drop-shadow(20px drop-shadow black); */
+    position: absolute;
+    right: 0;
+    display: inline;
+   /* background-color: #120D24; */
+    height: 400px;
+    width: 300px;
+ }
